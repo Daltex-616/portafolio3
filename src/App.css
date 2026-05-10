@@ -1,0 +1,172 @@
+/* src/App.css */
+:root {
+  --dark-header: #1e2125;
+  --accent-blue: #0d6efd;
+  --bg-light: #f8f9fa;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Secciones que ocupan todo el ancho */
+.full-section {
+  width: 100vw;
+  padding: 100px 0;
+  margin: 0;
+}
+
+/* Hero Section con gradiente */
+.hero-full {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e2125 0%, #2c3136 100%);
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.custom-nav {
+  background-color: rgba(30, 33, 37, 0.98) !important;
+  border-bottom: 1px solid #333;
+}
+
+.project-card {
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.skill-box {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+.contact-footer {
+  background-color: #1e2125;
+  color: white;
+  padding: 80px 0 20px 0;
+}.timeline-dot {
+  position: absolute;
+  left: -9px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  background: #0d6efd;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 0 1px #0d6efd;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  color: white;
+  background-color: #128c7e;
+}
+
+.border-start {
+  border-width: 3px !important;
+}
+/* src/App.css */
+.contact-footer {
+  background-color: #121416; /* Un negro más profundo */
+  color: white;
+}
+
+.ls-tight {
+  letter-spacing: -2px;
+}
+
+/* Estilo para los botones de contacto */
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.contact-link:hover {
+  transform: translateY(-5px);
+  color: white;
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
+}
+
+.contact-link.linkedin:hover { background-color: #0077b5; border-color: #0077b5; }
+.contact-link.github:hover { background-color: #333; border-color: #333; }
+.contact-link.email:hover { background-color: #ea4335; border-color: #ea4335; }
+
+/* Animación sutil para la opacidad del footer */
+.border-top {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+/* src/App.css */
+
+.card-img-container {
+  height: 220px;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto evita que la imagen se deforme */
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1); /* Efecto zoom al pasar el mouse */
+}
+
+.project-card {
+  transition: all 0.3s ease;
+  border-radius: 20px !important;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.badge {
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
